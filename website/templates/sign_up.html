@@ -1,0 +1,48 @@
+{% extends "base.html" %}{% block title %}sign_up{% endblock %}
+{% block content %}
+<h1>this is the sign_up page</h1>
+<form method="post">
+    <h2 align="centre">Sign up</h2>
+    <div class="form-group" input="centre">
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            class="form-control"
+            id="email" 
+            name="email" 
+            placeholder="Enter Email"       
+        />
+    </div>
+    <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input 
+            type="text" 
+            class="form-control"
+            id="firstname" 
+            name="firstname" 
+            placeholder="Enter Your first name"       
+        />
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input 
+            type="text" 
+            class="form-control"
+            id="lastname" 
+            name="lastname" 
+            placeholder="Enter Your first name"       
+        />
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input 
+            type="password" 
+            class="form-control"
+            id="password" 
+            name="password" 
+            placeholder="Enter Your password"       
+        />
+    </div>
+</form>
+
+{% endblock %}

@@ -6,12 +6,8 @@ def home():
     return render_template('home.html')
 @auth.route('/login')
 def login():
-    return '<p>Login</p>'
-
-@auth.route('/logout')
-def logout():
-    return '<p>logout</p>'
+    return render_template('login.html')
 
 @auth.route('/sign-up')
 def sign_up():
-    return '<p>sign up</p>'
+    return render_template('sign_up.html')
