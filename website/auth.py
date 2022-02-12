@@ -1,7 +1,7 @@
 from xmlrpc.client import boolean
 from flask import Blueprint, render_template,request,flash,redirect,url_for
 from . import db
-from .models import User
+from .models import User,Note
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
